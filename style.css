@@ -1,3 +1,21 @@
 body {
 	font-family: 'Roboto', sans-serif;
 }
+.header {
+	width: 1170px;
+	margin:0 auto;
+}
+[class*=col-md] {
+	float: left;
+}
+.header:after {
+	content: "";
+	clear: both;
+	display: block;
+}
+.col-md-3 {
+	width: 25%;
+}
+.col-md-6 {
+	width: 50%;
+}
