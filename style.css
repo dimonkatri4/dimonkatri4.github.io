@@ -1,5 +1,6 @@
 body {
 	font-family: 'Roboto', sans-serif;
+	background-image: url(images/patt.png);
 }
 .header {
 	width: 1170px;
