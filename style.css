@@ -1,6 +1,6 @@
 body {
 	font-family: 'Roboto', sans-serif;
-	background-image: url(images/patt.png);
+/*	background-image: url(images/patt.png);*/
 }
 .header {
 	background-color: rgba(255,255,255,0.75);
@@ -47,4 +47,29 @@ li:last-child {
 .menu a:hover {
 	background-color: #2c71b8;
 	color: #ffffff;
+}
+.dropmenu {
+	display: none;
+    position: absolute;
+    top: 100%;
+    box-sizing: border-box;
+    background-color: #2c71b8;
+	color: #ffffff;
+	min-width: 200%;
+	border-left: 1px solid #2c71b8;
+	border-right: 1px solid #2c71b8;
+}
+li:nth-child(2) {
+	position: relative;
+}
+.dropmenu li {
+	float: none;
+	margin:0;
+	padding: 0;
+	width: 100%;
+	border:none;
+}
+
+.menu li:hover ul {
+	display: block;
 }
