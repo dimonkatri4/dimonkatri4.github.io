@@ -140,8 +140,27 @@ li:nth-child(2) {
 .bag {
 	display: inline;
 	margin-left: 30px;
+	position: relative;
 }
 .box-search {
 	float: right;
 	margin: 5px 0;
+}
+.counter {
+	border: 1px solid #2c71b8;
+	width: 20px;
+	height: 20px;
+	border-radius: 20px;
+	background-color: #2c71b8;
+	display: inline;
+	position: absolute;
+	left: -10px;
+    top: -20px;
+}
+.counter-text {
+	border:none;
+	display: inline;
+	width: 15px;
+	height: 10px;
+	background-color: inherit;
 }
