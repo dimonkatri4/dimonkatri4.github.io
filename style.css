@@ -25,6 +25,9 @@ body {
 .col-md-6 {
 	width: 50%;
 }
+.logo {
+	margin: 5px 0;
+}
 .menu a {
 	text-decoration: none;
 	display: block;
@@ -133,4 +136,12 @@ li:nth-child(2) {
 .bag_bt:hover{
 	background: url(images/icon2.png) no-repeat 50% 50%; 
 	background-color: #2c71b8;
+}
+.bag {
+	display: inline;
+	margin-left: 30px;
+}
+.box-search {
+	float: right;
+	margin: 5px 0;
 }
