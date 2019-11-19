@@ -6,7 +6,7 @@ body {
 	background-color: rgba(255,255,255,0.75);
 	padding: 25px 0; 
 }
-.content {
+.conteiner {
 	width: 1170px;
 	margin:0 auto;
 	box-sizing: border-box;
@@ -14,7 +14,7 @@ body {
 [class*=col-md] {
 	float: left;
 }
-.content:after, .menu:after, .box-search:after {
+.conteiner:after, .menu:after, .box-search:after {
 	content: "";
 	clear: both;
 	display: block;
@@ -24,6 +24,9 @@ body {
 }
 .col-md-6 {
 	width: 50%;
+}
+.col-md-9 {
+	width: 75%;
 }
 .logo {
 	margin: 5px 0;
@@ -163,4 +166,10 @@ li:nth-child(2) {
     color: #ffffff;
     font-size: 12px;
     font-weight: 500;
+}
+.slide {
+	height: 400px;
+}
+.filter {
+	height: 845px;
 }
