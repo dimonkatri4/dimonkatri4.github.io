@@ -14,7 +14,7 @@ body {
 [class*=col-md] {
 	float: left;
 }
-.conteiner:after, .menu:after, .box-search:after {
+.conteiner:after, .menu:after, .box-search:after, .products:after {
 	content: "";
 	clear: both;
 	display: block;
@@ -188,6 +188,11 @@ li:nth-child(2) {
 	font-weight: 600;
 	font-size: 48px;
 	color: white;
+	margin-bottom: 30px;
+}
+.sort {
+	float: right;
+	margin-bottom: 30px;
 }
 .list{
 	border: 1px solid white;
@@ -206,4 +211,18 @@ li:nth-child(2) {
 .list option {
 	height: 40px;
 	font-weight: 200;
+}
+.item {
+	width: 270px;
+	border: 1px solid white;
+	float: left;
+	box-sizing: border-box;
+	margin: 30px 0;
+}
+.second {
+	margin-left: 30px;
+	margin-right: 30px;
+}
+.last {
+	float: right;
 }
