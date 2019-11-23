@@ -268,6 +268,7 @@ li:nth-child(2) {
 	background-color: rgba(255,255,255,0.75);
 	height: 180px;
 	position: relative;
+	border-bottom: 1px solid white;
 }
 .about {
 	color: white;
