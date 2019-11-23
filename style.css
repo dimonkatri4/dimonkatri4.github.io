@@ -226,3 +226,17 @@ li:nth-child(2) {
 .last {
 	float: right;
 }
+.image img {
+	background-repeat: no-repeat;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin:auto auto;
+}
+.image {
+	background-color: rgba(255,255,255,0.75);
+	height: 180px;
+	position: relative;
+}
