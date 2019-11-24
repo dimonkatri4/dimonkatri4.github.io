@@ -330,7 +330,18 @@ li:nth-child(2) {
 .button button:hover {
 	background-color: rgba(255,255,255,0.2);
 }
+.load_more a{
+	font-family: roboto;
+	font-size: 36px;
+	font-weight: 200;
+	color: white;
+	text-decoration: none;
+}
+.load_more {
+	text-align: center;
+}
 /*Filter*/
+
 .filter {
 	height: 760px;
 	background-color: rgba(255,255,255,0.2);
