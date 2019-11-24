@@ -339,7 +339,9 @@ li:nth-child(2) {
 }
 .load_more {
 	text-align: center;
+	margin-top: 10px;
 }
+
 /*Filter*/
 
 .filter {
@@ -395,4 +397,23 @@ label {
 }
 .sub {
 	text-align: left;
+}
+
+/*Footer*/
+
+.footer {
+	margin-top: 90px;
+	background-color: rgba(255,255,255,0.75);
+	height: 100px;
+}
+.link_footer {
+	text-align: center;
+	line-height: 100px;
+}
+.link_footer a{
+	font-family: roboto;
+	font-size: 21px;
+	font-weight: 200;
+	color: #2c71b8;
+	text-decoration: none;
 }
