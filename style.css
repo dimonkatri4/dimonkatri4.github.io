@@ -14,7 +14,8 @@ body {
 [class*=col-md] {
 	float: left;
 }
-.conteiner:after, .menu:after, .box-search:after, .conteiner end:after {
+
+.conteiner:after, .menu:after, .box-search:after, .products:after {
 	content: "";
 	clear: both;
 	display: block;
@@ -54,13 +55,18 @@ li:last-child {
 	background-color: #2c71b8;
 	color: #ffffff;
 }
+.arrow2 {
+	background: url(images/arrow2.png) no-repeat 50% 50%;
+	background-color: none;
+
+}
 .dropmenu {
 	display: none;
     position: absolute;
     top: 100%;
     box-sizing: border-box;
 	min-width: 202%;
-    left: -0.5%;
+    left: -0.6%;
 }
 .dropmenu a {
 	background-color: #2c71b8;
@@ -134,11 +140,11 @@ li:nth-child(2) {
 	width: 40px;
 	height: 40px;
 	border:none;
-	background: url(images/icon1.png) no-repeat 50% 50%; 
+	background: url(images/bask2.png) no-repeat 50% 50%; 
 	background-color: #ffffff;
 }
 .bag_bt:hover{
-	background: url(images/icon2.png) no-repeat 50% 50%; 
+	background: url(images/bask1.png) no-repeat 50% 50%; 
 	background-color: #2c71b8;
 }
 .bag {
@@ -173,12 +179,6 @@ li:nth-child(2) {
 	border-bottom: 1px solid white;
 	border-top: 1px solid white;
 }
-.filter {
-	height: 845px;
-	background-color: rgba(255,255,255,0.2);
-	margin-right: 30px;
-	border-right: 1px solid white;
-}
 .way {
 	font-size: 14px;
 	color: rgba(255,255,255,0.5);
@@ -188,6 +188,84 @@ li:nth-child(2) {
 	font-weight: 600;
 	font-size: 48px;
 	color: white;
+	margin-bottom: 30px;
+}
+
+/*sort*/
+
+.sort {
+	float: right;
+	margin-bottom: 30px;
+	position: relative;
+}
+.arrow img{
+	position: absolute;
+    width: 20px;
+    height: 15px;
+    left: 240px;
+    top: 15px;
+    z-index: 15;
+}
+.sort a {
+	text-decoration: none;
+	display: block;
+	color: #ffffff;;
+	padding-left: 20px;	
+	background-color: #2c71b8;
+	text-align: left;
+	font-size: 21px;
+	font-family: roboto;
+	font-weight: 300;
+}
+.option {
+	display: none;
+    position: absolute;
+    top: 102%;
+    box-sizing: border-box;
+    left: -0.3%;
+}
+.sort li {
+	box-sizing: border-box;
+	border: 1px solid white;
+}
+.sort ul li {
+	position: relative;
+	border-bottom: 1px solid white;
+	border-right: 1px solid white;
+	border-left: 1px solid white;
+	width: 270px;
+	vertical-align: middle;
+	outline: none;
+	line-height: 40px;
+	z-index: 10;
+}
+.option li {
+	float: none;
+	margin:0;
+	padding: 0;
+	width: 100%;
+	border:none;
+}
+
+.sort li:hover ul {
+	display: block;
+}
+
+.sort li:hover {
+	background-color: #2c71b8;
+}
+.sort li:hover a {
+	color: #ffffff;
+}
+
+.option li:hover a {
+	background-color: #ffffff;
+	color: #2c71b8;
+}
+
+/*.sort {
+	float: right;
+	margin-bottom: 30px;
 }
 .sort {
 	float: right;
@@ -206,18 +284,216 @@ li:nth-child(2) {
 	outline: none;
 	line-height: 40px;
 }
-.list option {
-	height: 40px;
-	font-weight: 200;
-}
+
+/*Products item*/
+
 .item {
-	width: 31.03%;
-	float: left;
+	width: 270px;
 	border: 1px solid white;
+	float: left;
+	box-sizing: border-box;
+	margin: 30px 0;
+	background-color: rgba(44,113,184,0.75);
 }
-.products {
+.second {
+	margin-left: 30px;
+	margin-right: 30px;
+}
+.last {
+	float: right;
+}
+.item_img {
+	background-repeat: no-repeat;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin:auto auto;
+}
+.zoom_btn {
+	box-sizing: border-box;
+	border:1px solid #2c71b8;
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	background: url(images/zoom.png) no-repeat 50% 50%;
+}
+.zoom_btn:hover {
+	background: url(images/zoom2.png) no-repeat 50% 50%;
+	background-color: #2c71b8;
+}
+.like_btn {
+	box-sizing: border-box;
+	border:1px solid #2c71b8;
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	right: 10px;
+	top: 50px;
+	background: url(images/like.png) no-repeat 50% 50%;
+}
+.like_btn:hover {
+	background: url(images/like2.png) no-repeat 50% 50%;
+	background-color: #2c71b8;
+}
+.image {
+	background-color: rgba(255,255,255,0.75);
+	height: 180px;
+	position: relative;
+	border-bottom: 1px solid white;
+}
+.about {
+	color: white;
+	padding-left: 15px;
+	padding-top: 15px;
+}
+.name {
+	font-size: 30px;
+	font-weight: bold;
+}
+.description {
+	font-size: 21px;
+	font-weight: 200;
+	margin-top: 20px;
+	line-height: normal;
+}
+.charact {
+	font-weight: 200;
+	font-size: 21px;
+	margin-top: 20px;
+}
+.charact span {
+	font-weight: bold;
+}
+.price {
+	font-weight: bold;
+	font-size: 48px;
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+.price span {
+	vertical-align: super;
+	font-size: 24px;
+}
+.button {
+	text-align: center;
+	margin-bottom: 30px;
+
+}
+.button button {
+	border:none;
+	width: 210px;
 	height: 50px;
+	background-color: rgb(44,113,184);
+	border: 1px solid white;
+	color: white;
+	font-size: 21px;
+	font-weight: bold;
+	font-family: roboto;
+	text-transform: uppercase;
 }
-.central {
-	margin:30px;
+.img_bask {
+	background-image: url(images/bask1.png);
+	width: 15px;
+    height: 17px;
+    position: absolute;
+    left: 180px;
+    top: 15px;
+}
+.add button {
+	position: relative;
+}
+.button button:hover {
+	background-color: rgba(255,255,255,0.2);
+}
+.load_more a{
+	font-family: roboto;
+	font-size: 36px;
+	font-weight: 200;
+	color: white;
+	text-decoration: none;
+}
+.load_more {
+	text-align: center;
+	margin-top: 10px;
+}
+
+/*Filter*/
+
+.filter {
+	height: 760px;
+	background-color: rgba(255,255,255,0.2);
+	margin-right: 30px;
+	border-right: 1px solid white;
+	padding-left: 30px;
+	padding-top: 33px;
+}
+input[type="checkbox"] {
+	display: none;
+}
+label:before {
+	content: "";
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	box-sizing: border-box;
+	border:1px solid white;
+	cursor: pointer;
+	margin-top: 20px;
+	margin-right: 10px;
+}
+input[type="checkbox"]:checked + label:before {
+	background-color: white;
+}
+.text_fiter {
+	font-size: 21px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: white;
+}
+label {
+	color: white;
+	font-weight: 300;
+	font-size: 21px;
+	cursor: pointer;
+}
+.filt {
+	margin-bottom: 65px; 
+}
+.ram, .more_option {
+	margin-bottom: 30px;
+}
+.more_option a {
+	font-family: roboto;
+	font-size: 21px;
+	font-weight: 200;
+	color: white;
+	text-decoration: none;
+	padding-left: 8px
+}
+.sub {
+	text-align: left;
+}
+
+/*Footer*/
+
+.footer {
+	margin-top: 90px;
+	background-color: rgba(255,255,255,0.75);
+	height: 100px;
+}
+.link_footer {
+	text-align: center;
+	line-height: 100px;
+}
+.link_footer a{
+	font-family: roboto;
+	font-size: 21px;
+	font-weight: 200;
+	color: #2c71b8;
+	text-decoration: none;
 }
