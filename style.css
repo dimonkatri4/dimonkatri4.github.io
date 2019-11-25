@@ -14,7 +14,7 @@ body {
 [class*=col-md] {
 	float: left;
 }
-.conteiner:after, .menu:after, .box-search:after {
+.conteiner:after, .menu:after, .box-search:after, .conteiner end:after {
 	content: "";
 	clear: both;
 	display: block;
@@ -189,6 +189,9 @@ li:nth-child(2) {
 	font-size: 48px;
 	color: white;
 }
+.sort {
+	float: right;
+}
 .list{
 	border: 1px solid white;
 	width: 270px;
@@ -206,4 +209,15 @@ li:nth-child(2) {
 .list option {
 	height: 40px;
 	font-weight: 200;
+}
+.item {
+	width: 31.03%;
+	float: left;
+	border: 1px solid white;
+}
+.products {
+	height: 50px;
+}
+.central {
+	margin:30px;
 }
