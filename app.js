@@ -12,10 +12,13 @@ for (let i=0; i < addToCartButtons.length; i++) {
 }
 
 let likeButtons = document.querySelectorAll(".like_btn");
-console.log(likeButtons);
 for (let i=0; i < likeButtons.length; i++) {
 	likeButtons[i].addEventListener('click', function() {
-		likeButtons.style.backgroundColor = '#2c71b8';
+		if(likeButtons[i].classList.contains("liked")) {
+			likeButtons[i].classList.remove("liked")
+		} else {
+			likeButtons[i].classList.add("liked")
+		}
 
 	} )
 }
