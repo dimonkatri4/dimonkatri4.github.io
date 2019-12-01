@@ -14,11 +14,12 @@ for (let i=0; i < addToCartButtons.length; i++) {
 let likeButtons = document.querySelectorAll(".like_btn");
 for (let i=0; i < likeButtons.length; i++) {
 	likeButtons[i].addEventListener('click', function() {
-		if(likeButtons[i].classList.contains("liked")) {
+		likeButtons[i].classList.toggle("liked");
+		/*if(likeButtons[i].classList.contains("liked")) {
 			likeButtons[i].classList.remove("liked")
 		} else {
 			likeButtons[i].classList.add("liked")
 		}
-
+*/
 	} )
 }
