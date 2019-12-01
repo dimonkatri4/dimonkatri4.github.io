@@ -23,3 +23,31 @@ for (let i=0; i < likeButtons.length; i++) {
 */
 	} )
 }
+
+$('.slider').slick({
+	dots:true,
+	autoplay:true,
+	autoplaySpeed: 2000,
+} )
+
+function toggleButtonState (count) {
+	if (count <= 1) {
+		decrementButton.disable = true;
+	} else decrementButton.disable = false;
+}
+
+let decrementButton = document.querySelector(".decrement");
+let productQuantityEl = document.querySelector(".product-quantity");
+let incrementButton = document.querySelector(".increment");
+
+incrementButton.addEventListener("click", function() {
+	let currentValue = +productQuantityEl.value;
+	let nextValue = currentValue +1;
+	productQuantityEl.value = nextValue;
+})
+
+decrementButton.addEventListener("click", function() {
+	let currentValue = +productQuantityEl.value;
+	let nextValue = currentValue -1;
+	productQuantityEl.value = nextValue;
+})

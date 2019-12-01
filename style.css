@@ -66,6 +66,7 @@ li:last-child {
     box-sizing: border-box;
 	min-width: 202%;
     left: -0.6%;
+    z-index: 20;
 }
 .dropmenu a {
 	background-color: #2c71b8;
@@ -172,11 +173,11 @@ li:nth-child(2) {
     font-size: 12px;
     font-weight: 500;
 }
-.slide {
-	height: 200px;
-	background-color: rgb( 0, 0, 0, 0.20);
-	border-bottom: 1px solid white;
-	border-top: 1px solid white;
+.slider div {
+	text-align: center;
+	color: white;
+	font-size: 50px;
+	padding: 50px 0;
 }
 .way {
 	font-size: 14px;
