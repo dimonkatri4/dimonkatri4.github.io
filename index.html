@@ -4,6 +4,8 @@
 	<meta charset="UTF-8">
 	<title>Shop project</title>
 	<link rel="stylesheet" type="text/css" href="reset.css">
+	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
@@ -44,14 +46,23 @@
 					</div>
 					<div class="bag">
 						<div class="bag_bt"></div>
-						<div class="counter">4</div>
+						<div class="counter" id="products-count">0</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</header>
+	<div class="slider-block">
+		<div class="conteiner">
+			<div class="slider">
+				<div>Slider 1</div>
+				<div>Slider 2</div>
+				<div>Slider 3</div>
+			</div>
+		</div>
+	</div>
 	<main class="main">
-		<div class="slide"> Slide</div>
+
 		<div class="conteiner">
 			<div class="col-md-3">
 				<div class="filter">
@@ -159,11 +170,16 @@
 							<div class="price">$599<span>25</span></div>
 						</div>
 						<div class="btn">
-							<div class="button abt">
+							<!-- <div class="button abt">
 								<button value="More Details">More Details</button>
+							</div> -->
+							<div class="change-quantity">
+								<button class="decrement">-</button>
+								<input type="text" value="1" class="product-quantity">
+								<button class="increment">+</button>
 							</div>
 							<div class="button add">
-								<button value="Add to cart">Add to cart
+								<button value="Add to cart" class="add-to-cart">Add to cart
 									<div class="img_bask"></div>
 								</button>
 							</div>
@@ -188,7 +204,7 @@
 								<button value="More Details">More Details</button>
 							</div>
 							<div class="button add">
-								<button value="Add to cart">Add to cart
+								<button value="Add to cart" class="add-to-cart">Add to cart
 									<div class="img_bask"></div>
 								</button>
 							</div>
@@ -213,7 +229,7 @@
 								<button value="More Details">More Details</button>
 							</div>
 							<div class="button add">
-								<button value="Add to cart">Add to cart
+								<button value="Add to cart" class="add-to-cart">Add to cart
 									<div class="img_bask"></div>
 								</button>
 							</div>
@@ -238,7 +254,7 @@
 								<button value="More Details">More Details</button>
 							</div>
 							<div class="button add">
-								<button value="Add to cart">Add to cart
+								<button value="Add to cart" class="add-to-cart">Add to cart
 									<div class="img_bask"></div>
 								</button>
 							</div>
@@ -263,7 +279,7 @@
 								<button value="More Details">More Details</button>
 							</div>
 							<div class="button add">
-								<button value="Add to cart">Add to cart
+								<button value="Add to cart" class="add-to-cart">Add to cart
 									<div class="img_bask"></div>
 								</button>
 							</div>
@@ -288,7 +304,7 @@
 								<button value="More Details">More Details</button>
 							</div>
 							<div class="button add">
-								<button value="Add to cart">Add to cart
+								<button value="Add to cart" class="add-to-cart">Add to cart
 									<div class="img_bask"></div>
 								</button>
 							</div>
@@ -313,7 +329,7 @@
 								<button value="More Details">More Details</button>
 							</div>
 							<div class="button add">
-								<button value="Add to cart">Add to cart
+								<button value="Add to cart" class="add-to-cart">Add to cart
 									<div class="img_bask"></div>
 								</button>
 							</div>
@@ -338,7 +354,7 @@
 								<button value="More Details">More Details</button>
 							</div>
 							<div class="button add">
-								<button value="Add to cart">Add to cart
+								<button value="Add to cart" class="add-to-cart">Add to cart
 									<div class="img_bask"></div>
 								</button>
 							</div>
@@ -363,7 +379,7 @@
 								<button value="More Details">More Details</button>
 							</div>
 							<div class="button add">
-								<button value="Add to cart">Add to cart
+								<button value="Add to cart" class="add-to-cart">Add to cart
 									<div class="img_bask"></div>
 								</button>
 							</div>
@@ -381,5 +397,9 @@
 			<a href="">© Copyright 2017</a>
 		</div>
 	</footer>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="slick/slick.min.js"></script>
+	<script src="app.js"></script>
 </body>
 </html>
