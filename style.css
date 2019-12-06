@@ -383,7 +383,20 @@ li:nth-child(2) {
 .button {
 	text-align: center;
 	margin-bottom: 30px;
-
+}
+.change-quantity {
+	margin-bottom: 10px;
+    text-align: center;
+}
+.product-quantity {
+	width: 100px;
+	color: #ffffff;;
+	padding-left: 20px;	
+	background-color: #2c71b8;
+	text-align: left;
+	font-size: 21px;
+	font-family: roboto;
+	font-weight: 300;
 }
 .button button {
 	border:none;
