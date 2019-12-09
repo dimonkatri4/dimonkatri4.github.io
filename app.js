@@ -30,24 +30,38 @@ $('.slider').slick({
 	autoplaySpeed: 2000,
 } )
 
+let decrementButton = document.querySelectorAll(".decrement");
+let productQuantityEl = document.querySelectorAll(".product-quantity");
+let incrementButton = document.querySelectorAll(".increment");
+
+for (let i=0; i<productQuantityEl.length; i++) {
+
 function toggleButtonState (count) {
 	if (count <= 1) {
-		decrementButton.disable = true;
-	} else decrementButton.disable = false;
+		decrementButton[i].disabled = true;
+	} else decrementButton[i].disabled = false;
 }
 
-let decrementButton = document.querySelector(".decrement");
-let productQuantityEl = document.querySelector(".product-quantity");
-let incrementButton = document.querySelector(".increment");
+ 
+	const currentValue = +productQuantityEl[i].value;
+	toggleButtonState(currentValue[i]);
 
-incrementButton.addEventListener("click", function() {
-	let currentValue = +productQuantityEl.value;
-	let nextValue = currentValue +1;
-	productQuantityEl.value = nextValue;
+incrementButton[i].addEventListener("click", function() {
+	// let currentValue = +productQuantityEl.value;
+	// let nextValue = currentValue +1;
+	// productQuantityEl.value = nextValue;
+	productQuantityEl[i].value = +productQuantityEl[i].value + 1;
+	toggleButtonState(productQuantityEl[i].value);
+
 })
 
-decrementButton.addEventListener("click", function() {
-	let currentValue = +productQuantityEl.value;
-	let nextValue = currentValue -1;
-	productQuantityEl.value = nextValue;
+decrementButton[i].addEventListener("click", function() {
+	// let currentValue = +productQuantityEl.value;
+	// let nextValue = currentValue -1;
+	// productQuantityEl.value = nextValue;
+	productQuantityEl[i].value = +productQuantityEl[i].value -1;
+	toggleButtonState(productQuantityEl[i].value);
 })
+}
+
+let price = document.querySelector('.price');
