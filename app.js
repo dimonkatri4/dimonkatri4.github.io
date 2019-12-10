@@ -41,12 +41,18 @@ for (let i=0; i<productQuantityEl.length; i++) {
 function toggleButtonState (count) {
 	if (count <= 1) {
 		decrementButton[i].disabled = true;
-	} else decrementButton[i].disabled = false;
+	} else if (count >= 29) {
+		incrementButton[i].disabled = true; 
+	}
+	 else { 
+	 	decrementButton[i].disabled = false;
+	 	incrementButton[i].disabled = false;
+	}
 }
 
  
 	const currentValue = +productQuantityEl[i].value;
-	toggleButtonState(currentValue[i]);
+	toggleButtonState(currentValue);
 
 incrementButton[i].addEventListener("click", function() {
 	// let currentValue = +productQuantityEl.value;
