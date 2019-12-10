@@ -2,9 +2,11 @@ let productsCountEl = document.getElementById("products-count");
 
 let addToCartButtons = document.querySelectorAll(".add-to-cart");
 
+let productQuantityEl = document.querySelectorAll(".product-quantity");
+
 for (let i=0; i < addToCartButtons.length; i++) {
 	addToCartButtons[i].addEventListener ('click', function (){
-		productsCountEl.textContent = +productsCountEl.textContent + 1;
+		productsCountEl.textContent = +productsCountEl.textContent + +productQuantityEl[i].value;
 		// let prevProductsCount = +productsCountEl.textContent;
 		// productsCountEl.textContent = prevProductsCount + 1;
 	}
@@ -31,7 +33,7 @@ $('.slider').slick({
 } )
 
 let decrementButton = document.querySelectorAll(".decrement");
-let productQuantityEl = document.querySelectorAll(".product-quantity");
+
 let incrementButton = document.querySelectorAll(".increment");
 
 for (let i=0; i<productQuantityEl.length; i++) {
